@@ -1,0 +1,161 @@
+/* General styles */
+.home {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+    background-color: #f0f0f5;
+}
+
+/* Hero section with animated gradient and glass effect */
+.hero-background {
+    height: 100vh;
+    background-image: url('../assets/japan.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.3), rgba(157, 65, 125, 0.3));
+    backdrop-filter: blur(1.5px);
+    animation: gradientAnimation 10s ease infinite alternate;
+    z-index: 1;
+}
+
+.hero-text {
+    color: white;
+    z-index: 2;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    padding: 0 20px;
+    backdrop-filter: blur(4px);
+}
+
+.hero-title {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    font-size: 30px;
+    color: #eee;
+    font-weight: 400;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards section with soft background */
+.cards-section {
+    background: linear-gradient(to bottom, #fdfcfe, #f0f0f5);
+    padding: 60px 40px;
+}
+
+/* Card slider */
+.card-slide {
+    padding: 0 10px;
+    max-width: 340px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.card-slide:hover {
+    transform: scale(1.05);
+}
+
+.card-link {
+    display: block;
+    background: #ffffffcc;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card-link:hover {
+    box-shadow: 0 10px 32px rgba(157, 65, 125, 0.2);
+}
+
+.card-link img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-link:hover img {
+    transform: scale(1.1);
+}
+
+.card-link h3 {
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Slick arrows customization */
+.slick-prev::before,
+.slick-next::before {
+    color: #9d417d;
+    font-size: 30px;
+    opacity: 0.8;
+    transition: color 0.3s ease;
+}
+
+.slick-prev:hover::before,
+.slick-next:hover::before {
+    color: #cc5fa2;
+}
+
+.japanese-quote {
+    text-align: center;
+    padding: 60px 20px;
+    font-style: italic;
+    font-size: 20px;
+    color: #444;
+    border-top: 2px solid #eee;
+}
+
+.japanese-quote span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #9d417d;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}

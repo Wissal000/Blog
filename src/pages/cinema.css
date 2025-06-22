@@ -1,0 +1,147 @@
+
+
+/* General page layout */
+.cinema-page {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #faf8f5;
+  color: #2c2c2c;
+  padding-bottom: 60px;
+  line-height: 1.8;
+}
+
+/* Banner image */
+.cinema-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-top: 90px; /* or any value you prefer */
+  border-bottom: 5px solid #d6c2a1;
+}
+
+.titles-paragraphs{
+    font-size: 25px;
+    margin-left: 0;
+    color: #8e4724;
+    text-align: left;
+}
+
+/* Main section */
+.sait-tu-que {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 2rem;
+  color: #3a2c1a;
+  margin-bottom: 1rem;
+  padding-left: 10px;
+}
+
+/* Subtitles inside articles */
+.opinion-subtitle {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: #8e4724;
+  font-weight: bold;
+}
+.billet {
+    text-align: left;
+}
+/* Paragraphs */
+.section-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.4rem;
+  color: #333;
+  text-align: left;
+  text-align: justify;
+}
+
+
+/* Emphasis and strong */
+.section-text em {
+  font-style: italic;
+  color: #7a4d18;
+  text-align: left;
+}
+
+.section-text strong {
+  font-weight: bold;
+  color: #aa5b2b;
+}
+
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #121010;
+  display: block;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+.manga-img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.genre-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+.genre-block {
+  margin-bottom: 2rem;
+}
+
+.genre-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  border-left: 4px solid #aaa;
+  padding-left: 0.5rem;
+}
+
+.genre-text {
+  font-size: 1rem;
+  color: #444;
+}
+
+.chrono-img{
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 40px auto;
+  border-radius: 12px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+
+  .opinion-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .cinema-section {
+    padding: 0 15px;
+  }
+}
