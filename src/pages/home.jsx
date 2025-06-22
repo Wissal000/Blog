@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./home.css";
+import footer from "../assets/japan-map.png";
 
 export const Home = () => {
   const slides = [
@@ -68,10 +69,20 @@ export const Home = () => {
 
         <section className="japanese-quote">
           <p>
-            « Même la poussière, lorsqu'elle s'accumule, peut devenir une
-            montagne. »
+            « Plutôt que de chasser le chat, retire le poisson. »
           </p>
           <span>— Proverbe japonais</span>
+        </section>
+        <section className="footer">
+          <img src={footer} alt="footer" />
+          <p className="footer-text">
+            <h2 className="footer-header">Japan</h2>Le Japon est un pays
+            insulaire d’Asie de l’Est, situé dans l’océan Pacifique. Il est
+            connu pour son mélange unique de culture traditionnelle et de
+            technologie moderne, ses magnifiques cerisiers en fleurs et sa riche
+            histoire. Le pays est composé de quatre îles principales et de
+            nombreuses îles plus petites, avec Tokyo pour capitale.
+          </p>
         </section>
       </div>
     </div>

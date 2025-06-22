@@ -1,9 +1,10 @@
 // cinema.jsx
 import React from "react";
 import "./cinema.css";
-import cinemaImg from "../assets/cinema.jpg";
+import cinemaImg from "../assets/patt.jpg";
 import manga from "../assets/manga.png";
-import chrono from "../assets/chronologie.png";
+import cinemapict from "../assets/cinemapict.jpg";
+import kabuki from "../assets/kabuki.png";
 
 export const Cinema = () => {
   return (
@@ -12,28 +13,45 @@ export const Cinema = () => {
 
       <section className="sait-tu-que">
         <div className="cinema-fact">
-          <h2 className="section-title">Sais-tu que ?</h2>
-          <p className="section-text">
-            Sais-tu que <em>hōga</em> est un trésor culturel qui brille depuis
-            plus d’un siècle ? Il est né au début du 20ᵉ siècle, avec des films
-            muets accompagnés d’un narrateur appelé <strong>benshi</strong>, une
-            tradition unique au monde.
+          <p className="section-text" style={{ marginTop: "70px" , lineHeight:"35px"}}>
+            <span style={{ color: "#d9534f", fontWeight: "bold" }}>
+              Sais-tu que{" "}
+            </span>
+            le cinéma japonais a débuté avec des films muets, mais qu’à cette
+            époque, un benshi, narrateur en direct, racontait l’histoire et
+            expliquait les scènes dans la salle ? Cette tradition unique rendait
+            les projections très vivantes et captivantes. Depuis, le cinéma
+            japonais s’est enrichi de nombreux genres, des films de samouraïs
+            aux animes célèbres dans le monde entier, toujours marqué par un
+            style poétique et profond.
+            <em style={{ color: "#a87373" }}>
+              {" "}
+              Installe-toi bien... et ne perds pas une miette !
+            </em>
           </p>
-          <p className="section-text">
-            Le cinéma japonais regorge de classiques comme les films de
-            samouraïs, les animes adaptés de mangas. Et ce n’est pas tout : son
-            style lent, poétique et rempli d’émotions lui donne une signature
-            inimitable. Installe-toi bien... et ne perds pas une miette !
-          </p>
+          <div style={{ marginTop: "30px", textAlign: "center" }}>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Jxld6e-IieQ"
+              title="The Art of the Benshi"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <p style={{ marginTop: "8px", fontSize: "0.9rem", color: "#666" }}>
+              Trailer de <em>The Art of the Benshi</em> – explorez la tradition
+              des benshi au Japon.
+            </p>
+          </div>
         </div>
 
         <billet className="cinema-opinion">
-          <h2 className="section-title">Le billet d'humeur</h2>
-          <h4 className="opinion-subtitle">
+          <h4 className="opinion-subtitle" style={{ marginTop: "65px" }}>
             Quand le silence devient le personnage principal
           </h4>
 
-          <div className="billet">
+          <div className="billet" style={{lineHeight: "35px"}}>
             <p className="section-text">
               Tu penses avoir déjà vu un film lent ? Attends. Non, vraiment. Car
               tant que tu n’as pas regardé un film japonais contemplatif, tu ne
@@ -97,75 +115,123 @@ export const Cinema = () => {
           </div>
         </billet>
         <blog>
-          <h2 className="section-title">Blog</h2>
-          <p className="section-text">
-            Entre tradition et modernité, il tisse un langage visuel singulier,
-            fait de gestes subtils et de regards chargés de sens. Il ne cherche
-            pas à impressionner par l’éclat, mais à émouvoir en profondeur. Des
-            films intimistes aux animés mondialement célèbres, des épopées de
-            samouraïs aux thrillers psychologiques, il embrasse une diversité
-            impressionnante de genres. Ce qui les relie tous ? Une capacité
-            unique à explorer l’humain ses doutes, ses choix, ses relations avec
-            pudeur et intensité. Parler du cinéma japonais, c’est accepter de
-            regarder autrement, de découvrir un rythme différent, un autre
-            regard sur le monde.
+          <p
+            className="section-text"
+            style={{ marginTop: "70px", lineHeight: "35px", textIndent:"40px"}}
+          >
+            Depuis ses origines, la culture cinématographique japonaise, riche
+            d’une histoire séculaire et d’une diversité artistique remarquable,
+            se distingue par ses multiples traditions qui ont marqué l’évolution
+            de ce septième art au pays du Soleil Levant. De la période muette
+            aux réalisateurs contemporains, en passant par les chefs-d’œuvre du
+            cinéma classique, chaque époque a contribué à forger un héritage
+            cinématographique unique et singulier. Découvrons ensemble les
+            multiples facettes des traditions du cinéma japonais qui ont
+            influencé tant de cinéastes à travers le monde.
           </p>
+          <img src={cinemapict} alt="cinemapict" className="manga-img" />
 
-          <strong className="titles-paragraphs">
-            🎬 Moments forts du cinéma japonais
-          </strong>
-          <p className="section-text">
-            Tout commence en 1899 avec Geisha no teodori, le tout premier film
-            japonais. Une simple danse de geisha… mais un grand pas pour
-            l’histoire du cinéma au Japon ! En 1950, le monde entier découvre le
-            génie d’Akira Kurosawa grâce à Rashomon, qui décroche un Oscar et
-            ouvre les portes du cinéma japonais à l’international. Puis vient
-            1954, une année inoubliable : Seven Samurai révolutionne le genre du
-            film de samouraï, tandis que Godzilla surgit de la mer pour devenir
-            une légende mondiale. En 1984, Hayao Miyazaki fait sensation avec
-            Nausicaä, un bijou d’animation qui pose les bases de l’âge d’or de
-            l’anime. Et en 2001, il revient en force avec Spirited Away, un
-            chef-d’œuvre magique qui bat tous les records au box-office japonais
-            et remporte l’Oscar du Meilleur Film d’Animation. Une consécration
-            planétaire !
+          <p className="section-text" style={{lineHeight: "35px"}}>
+            L’histoire du cinéma japonais commence à la fin du XIXᵉ siècle avec
+            l’arrivée du cinématographe et les premières projections inspirées
+            du théâtre kabuki. Très vite, le cinéma s’enracine dans la culture
+            traditionnelle japonaise, adaptant des pièces célèbres et utilisant
+            des codes scéniques propres au théâtre. Une particularité marquante
+            de cette époque est la présence des benshi, narrateurs en direct qui
+            commentaient les films muets. Leur talent d’improvisation, leur voix
+            et leur interprétation donnaient vie aux images et attiraient
+            parfois plus que le film lui-même. Cette tradition unique a façonné
+            une relation particulière entre le public japonais et le cinéma,
+            mêlant récit oral et image animée.
           </p>
-          <img src={chrono} alt="chrono" className="chrono-img" />
+          <p className="section-text" style={{lineHeight: "35px"}}>
+            La période muette du cinéma japonais, débutant au début du XXᵉ
+            siècle, a jeté les bases d’un art cinématographique profondément
+            ancré dans la culture japonaise, influencé par le théâtre
+            traditionnel comme le Kabuki et le Noh. Cette époque se distingue
+            par la présence unique du benshi, narrateur en direct qui
+            accompagnait les projections, ajoutant émotion et contexte aux films
+            muets.
+          </p>
+          <img src={kabuki} alt="kabuki" className="manga-img" />
+          <em style={{ display: "block", marginBottom: "10px" }}>
+            * Le kabuki est une forme de théâtre japonais traditionnel,
+            caractérisé par un style dramatique combinant musique, danse et jeu
+            d'acteur spectaculaire
+          </em>
+          <strong className="titles-paragraphs">Genres</strong>
 
-          <p className="section-text">
-            Le cinéma japonais est célèbre pour sa diversité de genres, chacun
-            ancré dans la culture et l’imaginaire du pays. L’anime (animation
-            japonaise) est sans doute le plus reconnu à l’international, avec
-            des œuvres variées mêlant aventure, science-fiction, drame ou
-            romance, souvent issues de mangas. Le genre jidaigeki (drame
-            historique) transporte les spectateurs dans le Japon féodal, avec
-            ses samouraïs, ses duels de sabre et ses dilemmes moraux. Les films
-            kaijū, centrés sur des monstres géants comme Godzilla, symbolisent
-            souvent des peurs collectives comme la guerre ou les catastrophes
-            nucléaires. Le J-Horror, quant à lui, se distingue du cinéma
-            d’horreur occidental par son ambiance lente et oppressante,
-            explorant les esprits vengeurs et les légendes populaires. Les films
-            de yakuza plongent dans l’univers des mafias japonaises, entre codes
-            d’honneur, violence et trahisons. Enfin, les pink films sont des
-            films érotiques qui ont marqué l’histoire du cinéma japonais par
-            leur audace et leur capacité à intégrer des éléments sociaux ou
-            artistiques. Ensemble, ces genres révèlent la richesse, la
-            créativité et l’évolution constante du cinéma au Japon.
-          </p>
-          <strong className="titles-paragraphs">
+          <section className="genres"
+            style={{
+              padding: "20px",
+            }}
+          >
+            <ul style={{ listStyleType: "none", padding: 0 }}>
+              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
+                <strong>Jidaigeki</strong>: genre historique situé à l’époque
+                féodale, explore l’honneur, la loyauté et les tensions sociales.
+                Le film le plus célèbre est sans doute « Les Sept Samouraïs »
+                (1954) d’Akira Kurosawa, une œuvre fondatrice qui a influencé le
+                cinéma mondial.
+              </li>
+              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
+                <strong>Chanbara</strong>: sous-genre centré sur les combats au
+                sabre, le Chanbara mise sur l’action stylisée et les duels. Le
+                film emblématique est « Zatoichi », une longue série culte
+                autour d’un samouraï aveugle maître du sabre.
+              </li>
+              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
+                <strong>Kaiju eiga</strong>: met en scène des monstres géants.
+                Le plus célèbre reste « Godzilla » (1954) d’Ishirō Honda, né des
+                angoisses post-nucléaires et devenu une icône du cinéma
+                japonais.
+              </li>
+              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
+                <strong>Yakuza eiga</strong>: ce genre explore le monde des
+                mafias japonaises, entre violence et codes d’honneur. Un film
+                marquant est « Branded to Kill » (1967) de Seijun Suzuki, à la
+                fois culte, chaotique et influent.
+              </li>
+              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
+                <strong>Gendaigeki</strong>: s’intéresse à la vie contemporaine
+                et aux tensions sociales modernes. Un film emblématique est «
+                Nobody Knows » (2004) de Hirokazu Kore-eda, une œuvre poignante
+                sur l’abandon familial.
+              </li>
+              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
+                <strong>Shomingeki</strong>: ce genre, intimiste et réaliste,
+                suit la vie des gens ordinaires. Le film le plus célèbre est «
+                Voyage à Tokyo » (1953) de Yasujirō Ozu, un chef-d’œuvre sur la
+                famille, le temps qui passe et l’incompréhension entre
+                générations.
+              </li>
+              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
+                <strong>Anime</strong>: est un style d’animation reconnu dans le
+                monde entier pour son esthétique unique et ses récits profonds.
+                Il débute en 1917 avec Namakura Gatana de Jun’ichi Kōuchi, un
+                court-métrage comique sur un samouraï maladroit, considéré comme
+                le premier anime. Depuis, ce genre n’a cessé d’évoluer, jusqu’à
+                des chefs-d’œuvre comme « Le Voyage de Chihiro » (2001), qui a
+                marqué l’histoire en remportant un Oscar. L’anime est
+                aujourd’hui un pilier culturel du Japon et un phénomène global.
+              </li>
+            </ul>
+          </section>
+
+          <strong className="titles-paragraphs" style={{fontSize:"22px"}}>
             Manga & Anime : Deux arts, une même âme
           </strong>
           <img src={manga} alt="manga" className="manga-img" />
-          <p className="section-text">
-            Le manga est une bande dessinée japonaise, généralement en noir et
-            blanc, avec un style de dessin particulier où les personnages ont
-            souvent de grands yeux expressifs. Lorsqu’une histoire de manga est
-            adaptée en dessin animé, on parle alors d’anime. L’anime est donc un
-            film ou une série animée japonaise qui reprend les mêmes thèmes et
-            styles que le manga. On reconnaît facilement un anime par son style
-            graphique unique, ses personnages et ses histoires très variées,
-            allant du fantastique à la vie quotidienne. Le manga se lit sur
-            papier ou en version numérique, tandis que l’anime se regarde à la
-            télévision, au cinéma ou sur internet.
+          <p className="section-text" style={{lineHeight: "35px"}}>
+            Le manga et l’anime sont deux formes d’expression profondément
+            liées, véritables piliers de la culture populaire japonaise. Le
+            manga, version papier, pose les bases visuelles et narratives,
+            tandis que l’anime leur donne mouvement, son et couleur. Souvent,
+            les plus grands succès animés sont adaptés de mangas à succès, comme
+            Naruto, Attack on Titan ou Demon Slayer. Bien qu’ils diffèrent par
+            le support, ces deux arts partagent une même âme : celle de raconter
+            des histoires intenses, émotionnelles et souvent universelles, avec
+            un style graphique unique et une sensibilité propre au Japon.
           </p>
         </blog>
       </section>

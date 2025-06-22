@@ -95,7 +95,11 @@
 .cinema-nav .nav-button {
   color: #f3efed;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  
   /* Elegant brown-orange for cinema */
+}
+.cinema-nav{
+  background-image: url('../assets/patt.jpg');
 }
 
 .cinema-nav .nav-button:hover {
