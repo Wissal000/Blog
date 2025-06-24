@@ -95,10 +95,11 @@
 .cinema-nav .nav-button {
   color: #f3efed;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  
+
   /* Elegant brown-orange for cinema */
 }
-.cinema-nav{
+
+.cinema-nav {
   background-image: url('../assets/patt.jpg');
 }
 
@@ -107,10 +108,52 @@
   color: #8a3e10;
 }
 
-/* Page architecture */
 .arch-nav {
-  color: #333;
+  background-image: url("../assets/navArch.jpeg");
+  background-size: contain;
+  background-position: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 12px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+.arch-nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(132, 67, 34, 0.65);
+  /* darker tone */
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+
+.arch-nav .nav-button {
+  color: #ece8e1;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: transparent;
+  padding: 8px 14px;
+  margin: 0 6px;
+  border: none;
+  border-radius: 2px;
+  transition: background 0.3s ease, color 0.3s ease;
+  letter-spacing: 0.6px;
+}
+
+.arch-nav .nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #102f05;
+  /* soft gold accent */
+}
+
 
 /* Page gastronomie */
 .gastro-nav {
@@ -120,14 +163,50 @@
 
 /* Page automobile */
 .auto-nav {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(6px);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 6px 20px;
+  /* less vertical padding to shrink height */
+  font-size: 0.9rem;
+  /* slightly smaller font */
+  line-height: 1.2;
+  /* tighter line spacing */
+  display: flex;
+  align-items: center;
+  /* vertically center content */
+  height: 70px;
+  /* fixed height (optional) */
+  box-sizing: border-box;
+  /* ensure padding fits inside height */
+}
 
+.auto-nav .nav-button {
   color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(135deg, #0e0202, #e53935);
+  padding: 8px 22px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(229, 57, 70, 0.4);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  align-self: center;
+  margin-left: 20px;
+  user-select: none;
+}
+
+.auto-nav .nav-button:hover,
+.auto-nav .nav-button:focus {
+  box-shadow: 0 6px 20px rgba(229, 57, 70, 0.7);
+  transform: scale(1.05);
+  outline: none;
 }
 
 /* Page religion */
 .relg-nav {
-  background-color: #f7f0fc;
-  color: #4a2a84;
+ 
 }
 
 /* Par défaut (autres pages) */

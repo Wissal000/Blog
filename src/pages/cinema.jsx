@@ -2,7 +2,6 @@
 import React from "react";
 import "./cinema.css";
 import cinemaImg from "../assets/patt.jpg";
-import manga from "../assets/manga.png";
 import kabuki from "../assets/kabuki.png";
 
 export const Cinema = () => {
@@ -32,13 +31,22 @@ export const Cinema = () => {
             </em>
           </p>
         </div>
+        <section />
 
-        <billet className="cinema-opinion">
-          <h4 className="opinion-subtitle" style={{ marginTop: "65px" }}>
+        <billet className="billet">
+          <h4
+            style={{
+              fontSize: "1.7rem",
+              marginTop: "2rem",
+              color: "#8e4724",
+              fontWeight: "bold",
+              textAlign: "left",
+            }}
+          >
             Quand le silence devient le personnage principal
           </h4>
 
-          <div className="billet" style={{ lineHeight: "35px" }}>
+          <div style={{ lineHeight: "35px" }}>
             <p className="section-text">
               Tu penses avoir déjà vu un film lent ? Attends. Non, vraiment. Car
               tant que tu n’as pas regardé un film japonais contemplatif, tu ne
@@ -101,7 +109,20 @@ export const Cinema = () => {
             </p>
           </div>
         </billet>
+
         <blog>
+          <h4
+            style={{
+              fontSize: "30px",
+              marginTop: "2rem",
+              color: "#8e4724",
+              fontWeight: "bold",
+              textAlign: "left",
+              marginBottom: "10px",
+            }}
+          >
+            Le Japon à l’écran : voyage au cœur du cinéma nippon
+          </h4>
           <p
             className="section-text"
             style={{
@@ -136,7 +157,13 @@ export const Cinema = () => {
           </p>
 
           <img src={kabuki} alt="kabuki" className="manga-img" />
-          <em style={{ display: "block", marginBottom: "50px" }}>
+          <em
+            style={{
+              display: "block",
+              marginBottom: "50px",
+              textAlign: "left",
+            }}
+          >
             * Le kabuki est une forme de théâtre japonais traditionnel,
             caractérisé par un style dramatique combinant musique, danse et jeu
             d'acteur spectaculaire
@@ -173,83 +200,55 @@ export const Cinema = () => {
               color: "#e16b8c",
               fontStyle: "italic",
               fontWeight: "bold",
+              marginTop: "60px",
+              textAlign: "left",
             }}
           >
             Les genres du cinéma japonais : un miroir de l’histoire et de la
             société
           </span>
 
-          <section
-            className="genres"
-            style={{
-              padding: "20px",
-            }}
-          >
-            <ul style={{ listStyleType: "none", padding: 0 }}>
-              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
-                <strong>Jidaigeki</strong>: genre historique situé à l’époque
-                féodale, explore l’honneur, la loyauté et les tensions sociales.
-                Le film le plus célèbre est sans doute « Les Sept Samouraïs »
-                (1954) d’Akira Kurosawa, une œuvre fondatrice qui a influencé le
-                cinéma mondial.
-              </li>
-              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
-                <strong>Chanbara</strong>: sous-genre centré sur les combats au
-                sabre, le Chanbara mise sur l’action stylisée et les duels. Le
-                film emblématique est « Zatoichi », une longue série culte
-                autour d’un samouraï aveugle maître du sabre.
-              </li>
-              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
-                <strong>Kaiju eiga</strong>: met en scène des monstres géants.
-                Le plus célèbre reste « Godzilla » (1954) d’Ishirō Honda, né des
-                angoisses post-nucléaires et devenu une icône du cinéma
-                japonais.
-              </li>
-              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
-                <strong>Yakuza eiga</strong>: ce genre explore le monde des
-                mafias japonaises, entre violence et codes d’honneur. Un film
-                marquant est « Branded to Kill » (1967) de Seijun Suzuki, à la
-                fois culte, chaotique et influent.
-              </li>
-              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
-                <strong>Gendaigeki</strong>: s’intéresse à la vie contemporaine
-                et aux tensions sociales modernes. Un film emblématique est «
-                Nobody Knows » (2004) de Hirokazu Kore-eda, une œuvre poignante
-                sur l’abandon familial.
-              </li>
-              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
-                <strong>Shomingeki</strong>: ce genre, intimiste et réaliste,
-                suit la vie des gens ordinaires. Le film le plus célèbre est «
-                Voyage à Tokyo » (1953) de Yasujirō Ozu, un chef-d’œuvre sur la
-                famille, le temps qui passe et l’incompréhension entre
-                générations.
-              </li>
-              <li style={{ marginBottom: "12px", lineHeight: "1.8" }}>
-                <strong>Anime</strong>: est un style d’animation reconnu dans le
-                monde entier pour son esthétique unique et ses récits profonds.
-                Il débute en 1917 avec Namakura Gatana de Jun’ichi Kōuchi, un
-                court-métrage comique sur un samouraï maladroit, considéré comme
-                le premier anime. Depuis, ce genre n’a cessé d’évoluer, jusqu’à
-                des chefs-d’œuvre comme « Le Voyage de Chihiro » (2001), qui a
-                marqué l’histoire en remportant un Oscar. L’anime est
-                aujourd’hui un pilier culturel du Japon et un phénomène global.
-              </li>
-            </ul>
-          </section>
+            <p className="section-text" style={{ lineHeight: "35px" }}>
+              Le cinéma japonais se décline en une multitude de genres, chacun
+              portant un regard singulier sur la société et l’histoire du pays.
+              Le Jidaigeki, genre historique situé à l’époque féodale, explore
+              l’honneur, la loyauté et les tensions sociales, avec comme œuvre
+              fondatrice Les Sept Samouraïs (1954) d’Akira Kurosawa. Son
+              sous-genre, le Chanbara, se concentre sur les duels au sabre et
+              l’action stylisée, illustré par la série culte Zatoichi, qui met
+              en scène un samouraï aveugle maître du sabre. Le Kaiju eiga, quant
+              à lui, donne vie à des monstres géants comme Godzilla (1954)
+              d’Ishirō Honda, reflet des angoisses nucléaires de l’après-guerre.
+              Le Yakuza eiga explore les codes d’honneur et la violence du
+              milieu mafieux, avec des films comme Branded to Kill (1967) de
+              Seijun Suzuki, devenu culte pour son style chaotique.
+              <br />
+              <br />
+              Plus proche de la réalité contemporaine, le Gendaigeki s’intéresse
+              à la société moderne, comme dans Nobody Knows (2004) de Hirokazu
+              Kore-eda, tandis que le Shomingeki, plus intimiste, suit le
+              quotidien des gens ordinaires, avec en tête le chef-d’œuvre Voyage
+              à Tokyo (1953) de Yasujirō Ozu. Enfin, le cinéma d’animation
+              japonais, ou anime, né en 1917 avec Namakura Gatana de Jun’ichi
+              Kōuchi, a conquis le monde grâce à des récits profonds et une
+              esthétique unique, culminant avec Le Voyage de Chihiro (2001),
+              Oscar du meilleur film d’animation. Ensemble, ces genres dessinent
+              les multiples visages d’un cinéma aussi riche que captivant.
+            </p>
 
           <span
-            className="titles-paragraphs"
             style={{
               fontFamily: "'Comic Sans MS', cursive, sans-serif",
-              fontSize: "1.3rem",
+              fontSize: "1.4rem",
               color: "#e16b8c",
               fontStyle: "italic",
               fontWeight: "bold",
+              marginTop: "60px",
+              textAlign: "left",
             }}
           >
             Manga & Anime : Deux arts, une même âme
           </span>
-          <img src={manga} alt="manga" className="manga-img" />
           <p className="section-text" style={{ lineHeight: "35px" }}>
             Le manga et l’anime sont deux formes d’expression profondément
             liées, véritables piliers de la culture populaire japonaise. Le
