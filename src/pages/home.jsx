@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./home.css";
 import footer from "../assets/japan-map.png";
+import sakuraIcon from "../assets/sakura.png";
 
 export const Home = () => {
   const slides = [
@@ -85,6 +86,7 @@ export const Home = () => {
           </p>
         </section>
       </div>
+      <img src={sakuraIcon} alt="Sakura" className="footer-icon" />
     </div>
   );
 };

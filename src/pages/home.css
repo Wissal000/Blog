@@ -173,7 +173,14 @@
     color: #222;
 }
 
-
+.footer-icon {
+  position: fixed;         /* reste visible même au scroll */
+  bottom: 0;
+  right: 0;
+  width: 200px;            /* taille ajustable */
+  pointer-events: none;    /* ne gêne pas le clic sur d'autres éléments */
+  z-index: 10;
+}
 
 /* Animations */
 @keyframes fadeIn {

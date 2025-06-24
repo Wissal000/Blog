@@ -3,7 +3,6 @@ import React from "react";
 import "./cinema.css";
 import cinemaImg from "../assets/patt.jpg";
 import manga from "../assets/manga.png";
-import cinemapict from "../assets/cinemapict.jpg";
 import kabuki from "../assets/kabuki.png";
 
 export const Cinema = () => {
@@ -13,7 +12,10 @@ export const Cinema = () => {
 
       <section className="sait-tu-que">
         <div className="cinema-fact">
-          <p className="section-text" style={{ marginTop: "70px" , lineHeight:"35px"}}>
+          <p
+            className="section-text"
+            style={{ marginTop: "70px", lineHeight: "35px" }}
+          >
             <span style={{ color: "#d9534f", fontWeight: "bold" }}>
               Sais-tu que{" "}
             </span>
@@ -29,21 +31,6 @@ export const Cinema = () => {
               Installe-toi bien... et ne perds pas une miette !
             </em>
           </p>
-          <div style={{ marginTop: "30px", textAlign: "center" }}>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/Jxld6e-IieQ"
-              title="The Art of the Benshi"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-            <p style={{ marginTop: "8px", fontSize: "0.9rem", color: "#666" }}>
-              Trailer de <em>The Art of the Benshi</em> – explorez la tradition
-              des benshi au Japon.
-            </p>
-          </div>
         </div>
 
         <billet className="cinema-opinion">
@@ -51,7 +38,7 @@ export const Cinema = () => {
             Quand le silence devient le personnage principal
           </h4>
 
-          <div className="billet" style={{lineHeight: "35px"}}>
+          <div className="billet" style={{ lineHeight: "35px" }}>
             <p className="section-text">
               Tu penses avoir déjà vu un film lent ? Attends. Non, vraiment. Car
               tant que tu n’as pas regardé un film japonais contemplatif, tu ne
@@ -117,7 +104,11 @@ export const Cinema = () => {
         <blog>
           <p
             className="section-text"
-            style={{ marginTop: "70px", lineHeight: "35px", textIndent:"40px"}}
+            style={{
+              marginTop: "70px",
+              lineHeight: "35px",
+              textIndent: "40px",
+            }}
           >
             Depuis ses origines, la culture cinématographique japonaise, riche
             d’une histoire séculaire et d’une diversité artistique remarquable,
@@ -129,9 +120,8 @@ export const Cinema = () => {
             multiples facettes des traditions du cinéma japonais qui ont
             influencé tant de cinéastes à travers le monde.
           </p>
-          <img src={cinemapict} alt="cinemapict" className="manga-img" />
 
-          <p className="section-text" style={{lineHeight: "35px"}}>
+          <p className="section-text" style={{ lineHeight: "35px" }}>
             L’histoire du cinéma japonais commence à la fin du XIXᵉ siècle avec
             l’arrivée du cinématographe et les premières projections inspirées
             du théâtre kabuki. Très vite, le cinéma s’enracine dans la culture
@@ -144,24 +134,53 @@ export const Cinema = () => {
             une relation particulière entre le public japonais et le cinéma,
             mêlant récit oral et image animée.
           </p>
-          <p className="section-text" style={{lineHeight: "35px"}}>
-            La période muette du cinéma japonais, débutant au début du XXᵉ
-            siècle, a jeté les bases d’un art cinématographique profondément
-            ancré dans la culture japonaise, influencé par le théâtre
-            traditionnel comme le Kabuki et le Noh. Cette époque se distingue
-            par la présence unique du benshi, narrateur en direct qui
-            accompagnait les projections, ajoutant émotion et contexte aux films
-            muets.
-          </p>
+
           <img src={kabuki} alt="kabuki" className="manga-img" />
-          <em style={{ display: "block", marginBottom: "10px" }}>
+          <em style={{ display: "block", marginBottom: "50px" }}>
             * Le kabuki est une forme de théâtre japonais traditionnel,
             caractérisé par un style dramatique combinant musique, danse et jeu
             d'acteur spectaculaire
           </em>
-          <strong className="titles-paragraphs">Genres</strong>
 
-          <section className="genres"
+          <p className="section-text" style={{ lineHeight: "35px" }}>
+            La période muette du cinéma japonais, qui s’étend au début du XXᵉ
+            siècle, marque une étape fondatrice dans l’histoire du septième art
+            au Japon. Cette ère se distingue par une caractéristique unique : la
+            présence des benshi. Ces narrateurs en direct accompagnaient chaque
+            projection, insufflant aux films muets une intensité émotionnelle et
+            narrative singulière, et jouant un rôle central dans l’expérience
+            cinématographique de l’époque.
+          </p>
+          <div style={{ marginTop: "30px", textAlign: "center" }}>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Jxld6e-IieQ"
+              title="The Art of the Benshi"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <p style={{ marginTop: "8px", fontSize: "0.9rem", color: "#666" }}>
+              Trailer de <em>The Art of the Benshi</em> – explorez la tradition
+              des benshi au Japon.
+            </p>
+          </div>
+          <span
+            style={{
+              fontFamily: "'Comic Sans MS', cursive, sans-serif",
+              fontSize: "1.4rem",
+              color: "#e16b8c",
+              fontStyle: "italic",
+              fontWeight: "bold",
+            }}
+          >
+            Les genres du cinéma japonais : un miroir de l’histoire et de la
+            société
+          </span>
+
+          <section
+            className="genres"
             style={{
               padding: "20px",
             }}
@@ -218,11 +237,20 @@ export const Cinema = () => {
             </ul>
           </section>
 
-          <strong className="titles-paragraphs" style={{fontSize:"22px"}}>
+          <span
+            className="titles-paragraphs"
+            style={{
+              fontFamily: "'Comic Sans MS', cursive, sans-serif",
+              fontSize: "1.3rem",
+              color: "#e16b8c",
+              fontStyle: "italic",
+              fontWeight: "bold",
+            }}
+          >
             Manga & Anime : Deux arts, une même âme
-          </strong>
+          </span>
           <img src={manga} alt="manga" className="manga-img" />
-          <p className="section-text" style={{lineHeight: "35px"}}>
+          <p className="section-text" style={{ lineHeight: "35px" }}>
             Le manga et l’anime sont deux formes d’expression profondément
             liées, véritables piliers de la culture populaire japonaise. Le
             manga, version papier, pose les bases visuelles et narratives,
