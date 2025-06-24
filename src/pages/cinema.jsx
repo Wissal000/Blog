@@ -18,13 +18,13 @@ export const Cinema = () => {
             <span style={{ color: "#d9534f", fontWeight: "bold" }}>
               Sais-tu que{" "}
             </span>
-            le cinéma japonais a débuté avec des films muets, mais qu’à cette
-            époque, un benshi, narrateur en direct, racontait l’histoire et
-            expliquait les scènes dans la salle ? Cette tradition unique rendait
-            les projections très vivantes et captivantes. Depuis, le cinéma
-            japonais s’est enrichi de nombreux genres, des films de samouraïs
-            aux animes célèbres dans le monde entier, toujours marqué par un
-            style poétique et profond.
+            Japon a été l’un des premiers pays à adopter le cinéma; a débuté
+            avec des films muets, mais qu’à cette époque, un benshi, narrateur
+            en direct, racontait l’histoire et expliquait les scènes dans la
+            salle ? Cette tradition unique rendait les projections très vivantes
+            et captivantes. Depuis, le cinéma japonais s’est enrichi de nombreux
+            genres, des films de samouraïs aux animes célèbres dans le monde
+            entier, toujours marqué par un style poétique et profond.
             <em style={{ color: "#a87373" }}>
               {" "}
               Installe-toi bien... et ne perds pas une miette !
@@ -208,33 +208,65 @@ export const Cinema = () => {
             société
           </span>
 
-            <p className="section-text" style={{ lineHeight: "35px" }}>
-              Le cinéma japonais se décline en une multitude de genres, chacun
-              portant un regard singulier sur la société et l’histoire du pays.
-              Le Jidaigeki, genre historique situé à l’époque féodale, explore
-              l’honneur, la loyauté et les tensions sociales, avec comme œuvre
-              fondatrice Les Sept Samouraïs (1954) d’Akira Kurosawa. Son
-              sous-genre, le Chanbara, se concentre sur les duels au sabre et
-              l’action stylisée, illustré par la série culte Zatoichi, qui met
-              en scène un samouraï aveugle maître du sabre. Le Kaiju eiga, quant
-              à lui, donne vie à des monstres géants comme Godzilla (1954)
-              d’Ishirō Honda, reflet des angoisses nucléaires de l’après-guerre.
-              Le Yakuza eiga explore les codes d’honneur et la violence du
-              milieu mafieux, avec des films comme Branded to Kill (1967) de
-              Seijun Suzuki, devenu culte pour son style chaotique.
-              <br />
-              <br />
-              Plus proche de la réalité contemporaine, le Gendaigeki s’intéresse
-              à la société moderne, comme dans Nobody Knows (2004) de Hirokazu
-              Kore-eda, tandis que le Shomingeki, plus intimiste, suit le
-              quotidien des gens ordinaires, avec en tête le chef-d’œuvre Voyage
-              à Tokyo (1953) de Yasujirō Ozu. Enfin, le cinéma d’animation
-              japonais, ou anime, né en 1917 avec Namakura Gatana de Jun’ichi
-              Kōuchi, a conquis le monde grâce à des récits profonds et une
-              esthétique unique, culminant avec Le Voyage de Chihiro (2001),
-              Oscar du meilleur film d’animation. Ensemble, ces genres dessinent
-              les multiples visages d’un cinéma aussi riche que captivant.
-            </p>
+          <p className="section-text" style={{ lineHeight: "35px" }}>
+            Le cinéma japonais se décline en une multitude de genres, chacun
+            portant un regard singulier sur la société et l’histoire du pays. Le
+            <strong> Jidaigeki</strong>, genre historique situé à l’époque
+            féodale, explore l’honneur, la loyauté et les tensions sociales,
+            avec comme œuvre fondatrice Les Sept Samouraïs (1954) d’Akira
+            Kurosawa. Son sous-genre, le<strong> chanbara</strong> se concentre
+            sur les duels au sabre et l’action stylisée, illustré par la série
+            culte Zatoichi, qui met en scène un samouraï aveugle maître du
+            sabre. Le <strong>Kaiju eiga</strong>, quant à lui, donne vie à des
+            monstres géants comme Godzilla (1954) d’Ishirō Honda, reflet des
+            angoisses nucléaires de l’après-guerre. Le Yakuza eiga explore les
+            codes d’honneur et la violence du milieu mafieux, avec des films
+            comme Branded to Kill (1967) de Seijun Suzuki, devenu culte pour son
+            style chaotique.
+            <br />
+            <br />
+            Plus proche de la réalité contemporaine, le{" "}
+            <strong>Gendaigeki</strong> s’intéresse à la société moderne, comme
+            dans Nobody Knows (2004) de Hirokazu Kore-eda, tandis que le{" "}
+            <strong>Shomingeki</strong>, plus intimiste, suit le quotidien des
+            gens ordinaires, avec en tête le chef-d’œuvre Voyage à Tokyo (1953)
+            de Yasujirō Ozu. Enfin, le cinéma d’animation japonais, ou{" "}
+            <strong>anime</strong>, né en 1917 avec Namakura Gatana de Jun’ichi
+            Kōuchi, a conquis le monde grâce à des récits profonds et une
+            esthétique unique, culminant avec Le Voyage de Chihiro (2001), Oscar
+            du meilleur film d’animation. Ensemble, ces genres dessinent les
+            multiples visages d’un cinéma aussi riche que captivant.
+            <br />
+          </p>
+          <div style={{ lineHeight: "0px" }}>
+            <em
+              style={{
+                display: "block",
+                marginBottom: "50px",
+                textAlign: "left",
+              }}
+            >
+              * Jidaigeki: drame historique
+            </em>
+            <em
+              style={{
+                display: "block",
+                marginBottom: "50px",
+                textAlign: "left",
+              }}
+            >
+              * Gendaigeki: théâtre contemporain
+            </em>
+            <em
+              style={{
+                display: "block",
+                marginBottom: "50px",
+                textAlign: "left",
+              }}
+            >
+              * Shomingeki: drame populaire
+            </em>
+          </div>
 
           <span
             style={{

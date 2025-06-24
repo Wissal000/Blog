@@ -112,7 +112,7 @@
   background-image: url("../assets/navArch.jpeg");
   background-size: contain;
   background-position: center;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 12px 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
@@ -137,7 +137,7 @@
 
 .arch-nav .nav-button {
   color: #ece8e1;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: transparent;
   padding: 8px 14px;
@@ -204,10 +204,35 @@
   outline: none;
 }
 
-/* Page religion */
 .relg-nav {
- 
+  background: #fffdf7 url("../assets/ying.png") center/contain repeat;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid #e0dbc9;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
+.relg-nav .nav-button {
+  background: none;
+  color: #0e170b;
+  border: 1.5px solid #185517;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.relg-nav .nav-button:hover {
+  color: #1f5656;
+  border-color: #337d5e;
+}
+
 
 /* Par défaut (autres pages) */
 .default-nav {
