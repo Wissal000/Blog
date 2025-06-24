@@ -31,6 +31,7 @@ export const Auto = () => {
             margin: "40px auto",
             maxWidth: "800px",
             lineHeight: 1.4,
+            color: "#b54829"
           }}
         >
           Le Japon, ce drôle de pays où même les voitures ont une personnalité.
@@ -98,6 +99,8 @@ export const Auto = () => {
             margin: "40px auto",
             maxWidth: "800px",
             lineHeight: 1.4,
+            color: "#b54829"
+
           }}
         >
           Quand la voiture devient culture : une passion qui dépasse la

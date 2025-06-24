@@ -13,7 +13,7 @@ export const Home = () => {
     {
       title: "Architecture",
       path: "/architecture",
-      image: require("../assets/architecture.png"),
+      image: require("../assets/archhh.jpg"),
     },
     {
       title: "Religion",
@@ -33,7 +33,7 @@ export const Home = () => {
     {
       title: "Automobile",
       path: "/automobile",
-      image: require("../assets/automobile.jpg"),
+      image: require("../assets/car.jpg"),
     },
   ];
 
