@@ -35,7 +35,8 @@ export const Gastro = () => {
           regarder, elle est aussi pleine de calme, de respect, de gestes
           précis. Chaque ingrédient a l’air d’avoir une importance, comme si on
           racontait une histoire dans chaque assiette.
-          <br /><br />  
+          <br />
+          <br />
           Et un jour, j’ai voulu goûter un peu de ce Japon-là. Depuis chez moi.
           <br />
           J’étais super motivé, j’avais trouvé un petit paquet au supermarché
@@ -45,7 +46,8 @@ export const Gastro = () => {
           se sont accrochés à mes baguettes comme une toile d’araignée. Et moi,
           brave comme je suis, j’ai quand même goûté. Résultat ? Une grimace que
           même mon miroir n’a pas supportée.
-          <br /><br />
+          <br />
+          <br />
           Mais malgré ça, j’ai adoré le moment. Parce que j’ai appris quelque
           chose. La cuisine japonaise, ce n’est pas toujours facile à
           comprendre… mais elle ne laisse jamais indifférent. Elle touche le
@@ -61,6 +63,74 @@ export const Gastro = () => {
           qui me parle sans mots.
         </p>
       </section>
+
+      <div className="blog-gastro">
+        <h3>
+          À table au Japon : un voyage des sens que vous n’oublierez jamais
+        </h3>
+        <h4>Une gastronomie qui raconte une histoire</h4>
+        <p>
+          Dès les premières bouchées, on comprend que la cuisine japonaise ne se
+          contente pas de nourrir : elle parle. Elle parle du passé, des
+          traditions, du lien profond entre les Japonais et la nature. Chaque
+          plat est conçu avec minutie, avec un profond respect pour les
+          ingrédients. Le Japon ne cuisine pas par automatisme : il cuisine pour
+          honorer la saison, la terre et l’océan. Ce n’est pas une gastronomie
+          tape-à-l’œil : c’est une cuisine de l’attention, de l’élégance et du
+          silence. Un plat bien présenté, équilibré en goût, couleur et texture,
+          est une forme de politesse envers celui qui va le manger.
+        </p>
+        <h4>L’élégance dans la simplicité</h4>
+        <p>
+          Au Japon, même un déjeuner rapide devient un moment sacré. Un bento
+          fait maison, bien compartimenté, soigneusement décoré, n’est pas juste
+          mignon : il traduit l’importance du soin et du détail. Dans un petit
+          restaurant de rue, un bol de ramen chaud peut vous émouvoir plus qu’un
+          dîner étoilé. Les Japonais ne cherchent pas à impressionner par la
+          quantité ou la complexité. Au contraire, ils séduisent par la maîtrise
+          du geste, la justesse des saveurs, et une présentation toujours
+          harmonieuse. C’est une esthétique du minimalisme, qui parle à tous nos
+          sens.
+        </p>
+        <h4>Bien plus que des sushis :</h4>
+        <p>
+          Réduire la cuisine japonaise aux seuls sushis serait une erreur. Bien
+          sûr, ces derniers sont emblématiques et mondialement connus, mais ils
+          ne représentent qu’un fragment de l’immense richesse culinaire du
+          pays. Il suffit de découvrir des plats comme le gyudon, un bol de riz
+          au bœuf tendre, ou encore le tonkatsu, un porc pané croustillant à
+          souhait. D’autres spécialités comme l’okonomiyaki, une crêpe salée
+          garnie selon les envies, ou le nabe, une fondue japonaise souvent
+          partagée entre amis ou en famille, révèlent une tout autre facette du
+          Japon : celle de la générosité, de la convivialité et de la chaleur
+          humaine. Goûter ces plats, c’est s’immerger dans l’intimité du
+          quotidien japonais, bien au-delà des clichés touristiques.
+        </p>
+        <h4>Manger avec les yeux, vivre avec le cœur</h4>
+        <p>
+          Au Japon, l’acte de manger va bien au-delà du goût : c’est une
+          expérience culturelle complète. Avant même de porter un aliment à la
+          bouche, on le contemple. La présentation est essentielle — les
+          couleurs doivent s’harmoniser, les formes dialoguer. Prendre une photo
+          de son plat n’est pas un geste futile, mais un rituel esthétique,
+          presque sacré. Manger, c’est aussi apprendre à s’adapter : retirer ses
+          chaussures, savourer le silence, saluer le chef avec respect. La
+          gastronomie japonaise reflète alors toute une philosophie de vie
+          discrète, raffinée, et profondément humaine.
+        </p>
+        <p>
+          Si vous voyagez au Japon, ne vous limitez pas aux itinéraires
+          classiques. Les vraies émotions culinaires se nichent souvent dans les
+          petites échoppes de quartier, là où les parfums flottent dans l’air et
+          où quelques habitués patientent en silence. Osez suivre votre
+          instinct, un conseil local, ou même une file d’attente discrète :
+          c’est là que la magie opère. Car au fond, la gastronomie japonaise est
+          une invitation à ralentir, à écouter ses sens, à redécouvrir le
+          plaisir simple de manger. Elle ne cherche pas à impressionner, mais à
+          toucher profondément, sincèrement, avec une délicatesse qui laisse
+          une empreinte durable, plat après plat.
+        </p>
+      </div>
     </div>
   );
 };

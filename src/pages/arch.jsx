@@ -31,7 +31,7 @@ export const Arch = () => {
 
         <section className="blog-section">
           <h1 className="blog-title">Ma maison prend l’eau, et j’adore ça !</h1>
-          <p className="billet">
+          <p className="billet-arch">
             Les maisons flottantes japonaises... C’est un peu comme si les
             Japonais avaient décidé que la terre, c’était trop banal, et que la
             vraie vie, c’est sur l’eau ! Franchement, qui n’a jamais rêvé de
@@ -79,7 +79,7 @@ export const Arch = () => {
             avec la rivière, voilà un concept qui ferait rêver tous les amateurs
             de changement sans effort.
           </p>
-          <img src={floated} alt="floating" className="float-img"/>
+          <img src={floated} alt="floating" className="float-img" />
         </section>
 
         <section className="blog-section">

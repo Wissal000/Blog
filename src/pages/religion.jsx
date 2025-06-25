@@ -8,9 +8,9 @@ export const Religion = () => {
       <img src={relgImg} alt="Religion" />
       <section className="sait-tu-que-relg">
         <p>
-           <span style={{ color: "#d9534f", fontWeight: "bold" }}>
-              Sais-tu que{" "}
-            </span>
+          <span style={{ color: "#d9534f", fontWeight: "bold" }}>
+            Sais-tu que{" "}
+          </span>
           la majorité des Japonais suivent à la fois le shintoïsme et le
           bouddhisme, sans voir la moindre contradiction entre les deux ?
           Là-bas, on ne considère pas la religion comme un choix unique ou un

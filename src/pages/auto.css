@@ -16,8 +16,10 @@
   flex-wrap: wrap;
   margin: 100px auto 40px;
   -webkit-backdrop-filter: blur(10px);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Georgia', serif;
+
 }
+
 
 /* Image de fond - floutée et semi-transparente */
 .autoback-image {
@@ -39,7 +41,6 @@
   width: 120%;
   display: flex;
   justify-content: right;
-  /* center the foreground image */
   align-items: right;
   padding: 50px;
 }
@@ -62,9 +63,7 @@
   max-width: 900px;
   margin: 40px auto 80px;
   padding: 24px 32px;
-  /* translucent background */
   backdrop-filter: blur(6px);
-  /* subtle frosted glass effect */
   border-radius: 16px;
   font-size: 1.1rem;
   line-height: 1.8;
@@ -78,24 +77,74 @@
 
 .highlight {
   color: #d62828;
-  /* deep red for emphasis */
   font-weight: bold;
 }
 
 .billet2 {
-  font-size: 1.1rem;
-  color: #333;
+  position: relative;
+  font-size: 1rem;
+  color: #2b2d42;
   line-height: 1.8;
   text-align: justify;
-  margin-top: -120px;
+  margin: 40px;
+  max-width: 850px;
+  padding: 24px 32px;
+  background-color: #fafafa;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  font-family: 'Georgia', serif;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: -100px;
 }
 
+.billet2::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -40px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(214, 40, 40, 0.3) 0%, transparent 70%);
+  z-index: 0;
+  transform: rotate(-15deg);
+}
+
+
 .blog3 {
-  font-size: 1.1rem;
-  color: #333;
+  position: relative;
+  font-size: 1rem;
+  color: #2b2d42;
   line-height: 1.8;
   text-align: justify;
-  margin-top: 0px;
+  margin: 40px auto;
+  padding: 28px 36px;
+  max-width: 850px;
+  background-color: #fdfdfd;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+  font-family: 'Georgia', serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.blog3::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(214, 40, 40, 0.18) 0%, transparent 70%);
+  z-index: 0;
+  transform: rotate(-12deg);
+}
+
+
+.blog3:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive layout */
