@@ -21,43 +21,18 @@
 }
 
 
-/* Image de fond - floutée et semi-transparente */
 .autoback-image {
   position: absolute;
-  top: 0;
+  top: 60px; /* Add your desired gap */
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: fill;
+  height: calc(100% - 100px); /* Adjust height accordingly */
+  object-fit: cover;
   z-index: 1;
   opacity: 0.5;
-  /* background-like feel */
   pointer-events: none;
 }
 
-.auto-image {
-  position: relative;
-  z-index: 2;
-  width: 120%;
-  display: flex;
-  justify-content: right;
-  align-items: right;
-  padding: 50px;
-}
-
-.auto-image img {
-  width: 70%;
-  height: auto;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-  margin-top: -10px;
-  margin-right: -60px;
-}
-
-
-.auto-image img:hover {
-  transform: scale(1.03);
-}
 
 .sait-tu-que2 {
   max-width: 900px;

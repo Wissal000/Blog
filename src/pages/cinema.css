@@ -1,152 +1,114 @@
-/* General page layout */
-.cinema-page {
-  font-family:Arial, Helvetica, sans-serif;
-  background-color: #fdfaf6;
-  color: #2c2c2c;
-  padding-bottom: 60px;
-  line-height: 1.8;
-}
-
-/* Banner image */
-.cinema-banner {
-  width: 100vw;
-  /* prend toute la largeur de la fenêtre */
-  height: auto;
-  display: block;
-  max-height: 400px;
-  object-fit: fill;
-  margin: 0;
-  /* retire les marges */
-  position: relative;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
-  /* recentre l'image si elle est dans un conteneur */
-  border-bottom: 5px solid #d6c2a1;
-}
-
-
-.titles-paragraphs {
-  font-size: 25px;
-  margin-left: 0;
-  color: #8e4724;
-  text-align: left;
-}
-
-/* Main section */
-.sait-tu-que {
+/* Container */
+.cinema-container {
+  font-family: 'Georgia', serif;
   max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: #fdfaf5;
+  color: #2e2e2e;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  line-height: 1.9;
+}
+
+/* Header image */
+.cinema-img {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 4px solid #d6c2a1;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/* "Sais-tu que" Block */
+.sait-tu-que-cin {
+  background: linear-gradient(135deg, #f6f1eb, #fff9f4);
+  border-left: 5px solid #d9534f;
+  padding: 25px 30px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  font-style: italic;
+  position: relative;
+}
+
+.sait-tu-que-cin::before {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 15px;
+  left: 15px;
+  opacity: 0.6;
+}
+
+.sait-tu-que-cin span {
+  color: #d9534f;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.sait-tu-que-cin em {
+  display: block;
+  margin-top: 1rem;
+  font-style: italic;
+  color: #a87373;
 }
 
 /* Section titles */
-.section-title {
+.billet h4,
+.blog-cinema h4 {
   font-size: 2rem;
-  color: #3a2c1a;
-  margin-bottom: 1rem;
-  padding-left: 10px;
-}
-
-.billet {
-  text-align: left;
+  font-weight: bold;
+  color: #8e4724;
+  margin: 2.5rem 0 1rem;
+  border-left: 4px solid #e7b198;
+  padding-left: 12px;
 }
 
 /* Paragraphs */
-.section-text {
-  font-size: 1.1rem;
-  margin-bottom: 1.4rem;
-  color: #333;
-  text-align: left;
+.billet p,
+.blog-cinema p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
   text-align: justify;
 }
 
+/* Image style */
+.kabuki-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 2rem auto 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
-/* Emphasis and strong */
-.section-text em {
+/* Decorative subtitles (section transitions) */
+.blog-cinema span {
+  display: block;
+  margin: 2.5rem 0 1rem;
+  font-size: 1.3rem;
+  color: #e16b8c;
   font-style: italic;
-  color: #7a4d18;
-  text-align: left;
-}
-
-.section-text strong {
   font-weight: bold;
-  color: #aa5b2b;
+  font-family: 'Comic Sans MS', cursive;
+  border-bottom: 2px dashed #f2c2c2;
+  padding-bottom: 6px;
 }
 
-
-.section-subtitle {
-  font-size: 1.1rem;
-  color: #121010;
-  display: block;
-  margin-bottom: 0.8rem;
-  text-align: left;
+/* Emoji style */
+.emoji-sticker {
+  font-size: 1.2rem;
 }
 
-.manga-img {
+/* Responsive video */
+iframe {
   width: 100%;
-  max-width: 700px;
-  height: auto;
-  display: block;
-  margin: 40px auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-.genre-section {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
-  line-height: 1.6;
-}
-
-.genre-block {
-  margin-bottom: 2rem;
-}
-
-.genre-title {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #2c3e50;
-  border-left: 4px solid #aaa;
-  padding-left: 0.5rem;
-}
-
-.genre-text {
-  font-size: 1rem;
-  color: #444;
-}
-
-.chrono-img {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  display: block;
-  margin: 40px auto;
-  border-radius: 12px;
-}
-
-.manga{
-  text-align: left;
-}
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 1.5rem;
-  }
-
-  .section-text {
-    font-size: 1rem;
-  }
-
-  .opinion-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .cinema-section {
-    padding: 0 15px;
-  }
+  max-width: 560px;
+  height: 315px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
 }

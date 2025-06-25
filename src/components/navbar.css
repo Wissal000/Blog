@@ -100,11 +100,9 @@
   border: none;
   border-radius: 30px;
   font-size: 16px;
+  margin-top: -14px;
 }
 
-.cinema-nav {
-  background-image: url('../assets/patt.jpg');
-}
 
 .cinema-nav .nav-button:hover {
   background: rgba(179, 95, 43, 0.1);
@@ -112,15 +110,11 @@
 }
 
 .arch-nav {
-  background-image: url("../assets/navArch.jpeg");
   background-size: contain;
   background-position: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 9px 19px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .arch-nav::before {
@@ -130,8 +124,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(132, 67, 34, 0.65);
-  /* darker tone */
   z-index: 0;
   pointer-events: none;
 }

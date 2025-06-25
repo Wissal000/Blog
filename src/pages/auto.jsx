@@ -160,7 +160,7 @@ export const Auto = () => {
               alt="image-kei"
               style={{
                 width: "350px",
-                height: "450px",
+                height: "400px",
                 borderRadius: "18px",
                 objectFit: "fill",
               }}
