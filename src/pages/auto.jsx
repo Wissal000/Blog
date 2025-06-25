@@ -36,7 +36,7 @@ export const Auto = () => {
         >
           Le Japon, ce drôle de pays où même les voitures ont une personnalité.
         </h4>
-        <p style={{textIndent: "40px"}}>
+        <p>
         Quand on pense à l’automobile japonaise, on imagine tout de suite des
         bolides de drift dévalant les routes de montagne ou des circuits
         mythiques comme Suzuka. Mais ce serait réducteur de croire que la
@@ -92,7 +92,7 @@ export const Auto = () => {
 
       <section className="blog3">
         <h4
-          style={{
+           style={{
             fontSize: "30px",
             fontWeight: 600,
             fontFamily: "'Playfair Display', serif",
@@ -100,13 +100,12 @@ export const Auto = () => {
             maxWidth: "800px",
             lineHeight: 1.4,
             color: "#b54829"
-
           }}
         >
           Quand la voiture devient culture : une passion qui dépasse la
           mécanique
         </h4>
-        <p style={{textIndent: "40px"}}>
+        <p>
           Et si la voiture n’était pas qu’un simple moyen de transport, mais un
           langage, un art, une identité ? Dans de nombreuses sociétés,
           l’automobile est bien plus qu’un objet utilitaire : elle reflète nos
